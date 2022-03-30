@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <checkout>
+            <superhero>
+                <universes>
+                    <item1>
+                        <option_value>Marvel Cinematic Universe</option_value>
+                    </item1>
+                    <item2>
+                        <option_value>DC Universe</option_value>
+                    </item2>
+                    <item3>
+                        <option_value>Fox X-Men Universe</option_value>
+                    </item3>
+                </universes>
+            </superhero>
+        </checkout>
+    </default>
+</config>

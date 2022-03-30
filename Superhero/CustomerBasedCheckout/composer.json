@@ -1,0 +1,22 @@
+{
+    "name": "superhero/module-customerbasedcheckout",
+    "description": "Customer Based Checkout Customization",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "SanketDev",
+            "email": "sanket.zadafiya.dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Superhero\\CustomerBasedCheckout\\": ""
+        }
+    }
+}

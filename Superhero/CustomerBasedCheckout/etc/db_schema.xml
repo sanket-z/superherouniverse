@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="superhero_customerbasedcheckout_superherouniverses" resource="default" engine="innodb" comment="superhero_customerbasedcheckout_superherouniverses Table">
+		<column xsi:type="int" name="superherouniverses_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="superherouniverses_id"/>
+		</constraint>
+		<column name="name" nullable="true" xsi:type="text" comment="name"/>
+		<column name="total_order_count" nullable="true" xsi:type="int" comment="total_order_count" identity="false"/>
+	</table>
+	<table name="quote">
+		<column name="superhero_universes" nullable="true" xsi:type="varchar" comment="superhero_universes" length="255"/>
+	</table>
+	<table name="sales_order">
+		<column name="superhero_universes" nullable="true" xsi:type="varchar" comment="superhero_universes" length="255"/>
+	</table>
+</schema>
